@@ -61,3 +61,14 @@ let cid: any = 1;
 //let customerID = <number> cid
 //Alternatively
 let customerID = cid as number;
+
+//Functions
+//Function addNum with the return type of number
+function addNum(x:number,y:number):number{
+    return x + y
+}
+
+//Void type, here the function is not returning anything so void type
+function log(message:string|number):void{
+    console.log(message)
+}
