@@ -28,3 +28,29 @@ let pid: number|string;
 pid = "22";
 
 //Enum
+enum direction1{
+    up,
+    down,
+    left,
+    right
+}
+
+// console.log(direction1);
+
+// const user: {
+//     id: number
+//     name: string
+// }={
+//     id: 1,
+//     name: "John"
+// }
+
+//Alternatively
+type User = {
+    id: number,
+    name: string
+}
+const user: User ={
+    id:1,
+    name: "John"
+}
