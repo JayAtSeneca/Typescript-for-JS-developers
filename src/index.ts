@@ -89,3 +89,34 @@ interface MathFunc{
 }
 const add:MathFunc = (x:number,y:number):number=> x + y
 const sub:MathFunc = (x:number,y:number):number=> x - y
+
+//Classes
+interface PersonInterface{
+    register():string
+}
+class Person implements PersonInterface{
+    private id: number
+    private name: string
+    constructor(id:number, name:string){
+        this.id = id
+        this.name = name
+    }
+    register(){
+        return `${this.name} is now registered`;
+    }
+};
+
+const john = new Person(1,"John Doe");
+const homer = new Person(2,"Homer");
+
+// console.log(john, homer);
+
+//subclass or derived class
+class Employee extends Person{
+    position: string
+    constructor(id:number, name:string, position:string){
+        super(id,name);
+        this.position = position;
+    }
+}
+const emp = new Employee(3, 'shawn', 'Developer');
