@@ -120,3 +120,11 @@ class Employee extends Person{
     }
 }
 const emp = new Employee(3, 'shawn', 'Developer');
+
+//Generics (same as templates in c++)
+function getArray<T>(items: T[]):T[]{
+    return new Array().concat(items);
+}
+
+let numArray = getArray<number>([1,2,3,4]);
+let strArray= getArray<string>(['john','homer', 'shawn']);
