@@ -54,3 +54,10 @@ const user: User ={
     id:1,
     name: "John"
 }
+
+
+//Type Assertion
+let cid: any = 1;
+//let customerID = <number> cid
+//Alternatively
+let customerID = cid as number;
